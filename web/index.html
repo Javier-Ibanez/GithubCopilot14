@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Naranja</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="calculator">
+        <section class="screen">
+            <div class="screen__header">
+                <h1>Calculadora Naranja</h1>
+                <p>Paréntesis, signo +/- y reinicio tras resultado.</p>
+            </div>
+            <div class="display-container">
+                <input id="display" class="display" value="0" readonly aria-label="Pantalla de calculadora" />
+                <div id="message" class="message" aria-live="polite"></div>
+            </div>
+        </section>
+        <section class="buttons">
+            <button class="btn clear">C</button>
+            <button class="btn negate">+/-</button>
+            <button class="btn parenthesis">(</button>
+            <button class="btn parenthesis">)</button>
+            <button class="btn op">/</button>
+            <button class="btn digit">7</button>
+            <button class="btn digit">8</button>
+            <button class="btn digit">9</button>
+            <button class="btn op">*</button>
+            <button class="btn digit">4</button>
+            <button class="btn digit">5</button>
+            <button class="btn digit">6</button>
+            <button class="btn op">-</button>
+            <button class="btn digit">1</button>
+            <button class="btn digit">2</button>
+            <button class="btn digit">3</button>
+            <button class="btn op">+</button>
+            <button class="btn zero digit">0</button>
+            <button class="btn digit">.</button>
+            <button class="btn equal" id="equals">=</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
